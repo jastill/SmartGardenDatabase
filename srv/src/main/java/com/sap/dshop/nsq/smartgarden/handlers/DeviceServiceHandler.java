@@ -13,14 +13,16 @@ import cds.gen.catalogservice.CatalogService_;
 import cds.gen.catalogservice.Books;
 
 @Component
-@ServiceName(CatalogService_.CDS_NAME)
-public class CatalogServiceHandler implements EventHandler {
+@ServiceName(DeviceService_.CDS_NAME)
+public class DeviceServiceHandler implements EventHandler {
 
+	/*
 	@After(event = CdsService.EVENT_READ)
 	public void discountBooks(Stream<Books> books) {
 		books.filter(b -> b.getTitle() != null && b.getStock() != null)
 		.filter(b -> b.getStock() > 200)
 		.forEach(b -> b.setTitle(b.getTitle() + " (discounted)"));
 	}
+	*/
 
 }
