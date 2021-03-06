@@ -1,7 +1,8 @@
-namespace my.bookshop;
+namespace dshop.smartgarden;
 
-entity Books {
-  key ID : Integer;
-  title  : String;
-  stock  : Integer;
+using { cuid, managed } from '@sap/cds/common';
+
+entity Devices: cuid, managed  {
+  name  : String;
+  description  : String;
 }
