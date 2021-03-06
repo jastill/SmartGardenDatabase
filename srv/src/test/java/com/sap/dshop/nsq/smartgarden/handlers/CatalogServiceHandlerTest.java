@@ -7,18 +7,18 @@ import java.util.stream.Stream;
 import org.junit.Before;
 import org.junit.Test;
 
-import cds.gen.catalogservice.Books;
+import cds.gen.gardenservice.Devices;
 
 public class CatalogServiceHandlerTest {
 
-	private CatalogServiceHandler handler = new CatalogServiceHandler();
-	private Books book = Books.create();
+	private GardenServiceHandler handler = new GardenServiceHandler();
+	private Devices device = Devices.create();
 
 	@Before
 	public void prepareBook() {
-		book.setTitle("title");
+		device.setName("test");
 	}
-
+/*
 	@Test
 	public void testDiscount() {
 		book.setStock(500);
@@ -38,5 +38,5 @@ public class CatalogServiceHandlerTest {
 		handler.discountBooks(Stream.of(book));
 		assertEquals("title", book.getTitle());
 	}
-
+*/
 }
